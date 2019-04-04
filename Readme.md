@@ -1,10 +1,10 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [Default.aspx](./CS/HyperlinkColumn/Default.aspx) (VB: [Default.aspx.vb](./VB/HyperlinkColumn/Default.aspx.vb))
+* [Default.aspx](./CS/HyperlinkColumn/Default.aspx) (VB: [Default.aspx](./VB/HyperlinkColumn/Default.aspx))
 * [Default.aspx.cs](./CS/HyperlinkColumn/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/HyperlinkColumn/Default.aspx.vb))
 * [details.aspx](./CS/HyperlinkColumn/details.aspx) (VB: [details.aspx](./VB/HyperlinkColumn/details.aspx))
-* [details.aspx.cs](./CS/HyperlinkColumn/details.aspx.cs) (VB: [details.aspx](./VB/HyperlinkColumn/details.aspx))
+* [details.aspx.cs](./CS/HyperlinkColumn/details.aspx.cs) (VB: [details.aspx.vb](./VB/HyperlinkColumn/details.aspx.vb))
 <!-- default file list end -->
 # How to create a DataItem template for a grid column at runtime
 
