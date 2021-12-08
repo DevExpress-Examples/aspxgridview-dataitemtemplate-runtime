@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # ASP.NET - Create a DataItemTemplate for an ASPxGridView column at Runtime
 
-This example demonstrates how to create a [DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate) at runtime.
+This example demonstrates how to create a [DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate) at runtime. The grid cells display the [ASPxHyperLink](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxHyperLink) control created in this template.
 
 ![ASPxGridView-DataItemTemplate](ASPxGridView-DataItemTemplate.png)
 
@@ -20,11 +20,13 @@ This example demonstrates how to create a [DataItemTemplate](https://docs.devexp
 
 ## Implementation Details
 
-Use a column's [DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate) property to specify a template for the column's cells. This property gets an object with an [ITemplate](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.itemplate) standard interface. To create this object, declare a custom class and implement the [ITemplate](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.itemplate) interface in it.
+Use a column's [DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate) property to specify a template for the column's cells as follows.
 
-In the class's [InstantiateIn](https://docs.microsoft.com/ru-ru/dotnet/api/system.web.ui.itemplate.instantiatein) method, create controls and add them to the [control collection](https://docs.microsoft.com/ru-ru/dotnet/api/system.windows.forms.control.controls) of a container passed to this method as the **Control** parameter. A container type is different for each template type. For the [DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate), the parent container is the [GridViewDataItemTemplateContainer](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataItemTemplateContainer). Use the container's properties to obtain a row's information. For example, use the **KeyValue** property to get a row key (`container.KeyValue`).
+The property gets an object that has an [ITemplate](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.itemplate) standard interface. To create this object, declare a custom class and implement the [ITemplate](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.itemplate) interface in it.
 
-To specify a template for a column's cells, create an instance of a template class and assign it to the column's [DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate) property.
+In the class's [InstantiateIn](https://docs.microsoft.com/ru-ru/dotnet/api/system.web.ui.itemplate.instantiatein) method, create controls that will make up the template and add them to the [control collection](https://docs.microsoft.com/ru-ru/dotnet/api/system.windows.forms.control.controls) of a container passed as this method's parameter. A container type is different for each template type. For the [DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate), the container is a [GridViewDataItemTemplateContainer](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataItemTemplateContainer). Use the container's properties to obtain a row's information. For example, use the **KeyValue** property to get a row key (`container.KeyValue`).
+
+Create an instance of the template class and assign it to the column's [DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate) property.
 
 ## Documentation
 
