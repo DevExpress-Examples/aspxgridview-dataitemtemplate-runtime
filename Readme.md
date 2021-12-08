@@ -3,9 +3,9 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E293)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# ASP.NET - Create a DataItemTemplate for an ASPxGridView column at Runtime
+# ASP.NET - Create a DataItemTemplate for an ASPxGridView Сolumn at Runtime
 
-This example demonstrates how to create a [DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate) at runtime. The grid cells display the [ASPxHyperLink](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxHyperLink) control created in this template.
+This example demonstrates how to create a [DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate) at runtime. Grid cells display the [ASPxHyperLink](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxHyperLink) control created in this template.
 
 ![ASPxGridView-DataItemTemplate](ASPxGridView-DataItemTemplate.png)
 
@@ -20,7 +20,7 @@ This example demonstrates how to create a [DataItemTemplate](https://docs.devexp
 
 ## Implementation Details
 
-Use a column's [DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate) property to specify a template for the column's cells as follows.
+A column's [DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate) property allows you to specify a template for the column's cells as follows.
 
 The property gets an object that has an [ITemplate](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.itemplate) standard interface. To create this object, declare a custom class and implement the [ITemplate](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.itemplate) interface in it.
 
