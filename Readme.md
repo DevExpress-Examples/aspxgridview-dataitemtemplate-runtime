@@ -10,7 +10,7 @@
 <!-- default file list end -->
 # How to create a DataItem template for a grid column at runtime
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e293/)**
+**[[Run Online]](https://codecentral.devexpress.com/128538626/)**
 <!-- run online end -->
 
 
