@@ -5,6 +5,9 @@
 <!-- default badges end -->
 
 # Grid View for ASP.NET Web Forms - Create a DataItemTemplate for a column at Runtime
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/128538626/)**
+<!-- run online end -->
 
 This example demonstrates how to create a [column cell template](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate) at runtime. Grid cells display the [ASPxHyperLink](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxHyperLink) control created in the template.
 
