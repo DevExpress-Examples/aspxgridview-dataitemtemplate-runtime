@@ -9,9 +9,6 @@
 * [Default.aspx.cs](./CS/HyperlinkColumn/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/HyperlinkColumn/Default.aspx.vb))
 <!-- default file list end -->
 # How to create a DataItem template for a grid column at runtime
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e293/)**
-<!-- run online end -->
 
 
 <p>This example demonstrates how to create a simple hyperlink template programmatically. There is a MyHyperlinkTemplate class; it implements an ITemplate standard interface. A MyHyperlinkTemplate instance is created and assigned to a column's DataItemTemplate property on an ASPxGridView1_Load event.</p><p><strong>See Also:</strong><br />
